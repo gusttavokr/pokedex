@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './pages/home/App.tsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import Gen1 from './pages/gen1/Gen1.tsx'
 
 const router = createBrowserRouter([
   {
@@ -11,7 +12,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/gen1",
-    element: <div>OIIII</div>
+    element: <Gen1 />
   }
 ])
 
