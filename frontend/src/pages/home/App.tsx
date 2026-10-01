@@ -3,7 +3,8 @@
 // import reactLogo from './assets/react.svg'
 // import viteLogo from './assets/vite.svg'
 import './App.css'
-import logoPokemon from './assets/Pokemon-Logo.png'
+import GenList from '../../components/layout/GenList'
+import MyHeader from '../../components/layout/myHeader'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -11,39 +12,15 @@ function App() {
   return (
     <>
 
-    <main className='bg-red-800 text-white h-screen p-10 flex flex-col items-center'>
-      {/* <img src={logoPokemon} className='max-w-100'></img>
-      <h1 className='text-5xl font-bold text-center'>Pokédex</h1> */}
+    <main className='bg-red-800 text-white h-full p-10 flex flex-col items-center gap-10'>
 
-      <header className='flex w-full justify-between items-start'>
-        <div className='w-full flex items-start gap-10'>
-          <div className='flex flex-col items-center justify-center'>
-            <div className='bg-blue-500 w-25 h-25 rounded-full absolute'></div>
-            <div className='bg-white w-30 h-30 rounded-full'></div>
-          </div>
-          <div className='flex gap-5'>
-            <div className='flex flex-col items-center justify-center'>
-              {/* <div className='bg-blue-500 w-35 h-35 rounded-full absolute'></div> */}
-              <div className='bg-red-500 w-10 h-10 rounded-full absolute'></div>
-              <div className='bg-red-900 w-15 h-15 rounded-full'></div>
-            </div>
-            <div className='flex flex-col items-center justify-center'>
-              {/* <div className='bg-blue-500 w-35 h-35 rounded-full absolute'></div> */}
-              <div className='bg-yellow-500 w-10 h-10 rounded-full absolute'></div>
-              <div className='bg-yellow-900 w-15 h-15 rounded-full'></div>
-            </div>
-            <div className='flex flex-col items-center justify-center'>
-              {/* <div className='bg-blue-500 w-35 h-35 rounded-full absolute'></div> */}
-              <div className='bg-green-500 w-10 h-10 rounded-full absolute'></div>
-              <div className='bg-green-900 w-15 h-15 rounded-full'></div>
-            </div>
-          </div>
-        </div>
+      <MyHeader></MyHeader>
+      <section className='flex flex-col items-center gap-20'>
 
-        <img src={logoPokemon} className='max-w-50'></img>
-      </header>
+        <h1 className='text-5xl font-bold text-center'>Selecione uma geração:</h1>
 
-      
+        <GenList></GenList>
+      </section>
     </main>
 
       {/* <section id="center">
